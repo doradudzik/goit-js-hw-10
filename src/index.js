@@ -22,6 +22,7 @@ const inputHandler = () => {
         Notify.info(
           'Too many matches found. Please enter a more specific name'
         );
+        return; //zatrzymanie funkcji gdy jest zbybt wiele wyników
       }
       renderCountriesData(data); //tworzenie listy z danych na podstawie aktualnego textInput
     })
